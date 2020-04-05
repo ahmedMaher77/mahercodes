@@ -1,0 +1,116 @@
+/*----------------General styles----------------*/
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+}
+h2 {
+  color: hsl(234, 12%, 34%);
+}
+p {
+  color: hsl(229, 6%, 66%);
+}
+
+/*  --------------- Top Div --------------   */
+#top-div {
+  text-align: center;
+  padding-top: 60px;
+}
+
+#main-heading {
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin: 0 auto;
+  color: hsl(234, 12%, 34%);
+}
+
+#second-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0 auto;
+}
+#desc {
+  width: 500px;
+  margin: 20px auto;
+}
+/*  --------------- Bottom Div --------------   */
+
+#inner-div {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  width: 300px;
+  height: 210px;
+  padding: 15px;
+  margin: 20px;
+  border-style: solid;
+  border-width: 5px 0 0;
+  border-radius: 2%;
+  background-color: white;
+  box-shadow: 0 10px 7px -7px hsl(234, 12%, 34%);
+}
+.item img {
+  float: right;
+}
+#supervisor {
+  border-color: hsl(180, 62%, 55%);
+  margin-top:122px ;
+}
+#team {
+  border-color: hsl(0, 78%, 62%);
+  
+}
+#karma {
+  border-color: hsl(34, 97%, 64%);
+  
+}
+#calculator {
+  border-color: hsl(212, 86%, 64%);
+  margin-top:122px ;
+}
+
+/*--------------------------Resposiveness ----------------------------*/
+@media (min-width: 1000px) and (max-width: 1440px){
+  /* OK */
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  #inner-div {
+    flex-direction: column;
+  }
+  #supervisor ,#calculator {
+    margin-top: 20px;
+  }
+  .item {
+    margin: 20px auto;
+  }
+  
+}
+
+@media (min-width: 375px) and (max-width: 700px){
+  #main-heading {
+    font-size: 30px;
+  }
+  #second-heading {
+    font-size: 30px;
+  }
+  #desc {
+    width: 80%;
+  }
+  #inner-div {
+    flex-direction: column;
+  }
+  #supervisor ,#calculator {
+    margin-top: 20px;
+  }
+  .item {
+    margin: 20px auto;
+  }
+}
